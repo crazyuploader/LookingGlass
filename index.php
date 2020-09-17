@@ -50,7 +50,7 @@ if (file_exists('LookingGlass/Config.php')) {
 
     <!-- IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
 
     <!-- Styles -->
@@ -81,7 +81,7 @@ if (file_exists('LookingGlass/Config.php')) {
                 <p><?php if (!empty($ipv6)) { echo 'Test IPv6: ',$ipv6; } ?></p>
                 <p>Test files: <?php
                   foreach ($testFiles as $val) {
-                    echo "<a href=\"{$val}.test\" id=\"testfile\">{$val}</a> ";
+                    echo "<a href=\"https://rack1.jnraptor.net/lg/{$val}.test\" id=\"testfile\">{$val}</a> ";
                   }
                 ?></p>
               </div>
@@ -142,7 +142,7 @@ if (file_exists('LookingGlass/Config.php')) {
     </div><!-- /container -->
 
     <!-- Javascript -->
-    <script src="assets/js/jquery-1.11.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="assets/js/LookingGlass.min.js"></script>
     <script src="assets/js/XMLHttpRequest.min.js"></script>
   </body>
