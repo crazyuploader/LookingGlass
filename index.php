@@ -81,7 +81,8 @@ if (file_exists('LookingGlass/Config.php')) {
                 <p><?php if (!empty($ipv6)) { echo 'Test IPv6: ',$ipv6; } ?></p>
                 <p>Test files: <?php
                   foreach ($testFiles as $val) {
-                    echo "<a href=\"https://rack1.jnraptor.net/lg/{$val}.test\" id=\"testfile\">{$val}</a> ";
+                    #echo "<a href=\"https://rack1.jnraptor.net/lg/{$val}.test\" id=\"testfile\">{$val}</a> ";
+                    echo "<a href=\"{$val}.test\" id=\"testfile\">{$val}</a> ";
                   }
                 ?></p>
               </div>
@@ -136,7 +137,7 @@ if (file_exists('LookingGlass/Config.php')) {
         <p class="pull-right">
             <a href="#">Back to top</a>
         </p>
-        <p>Powered by <a href="http://github.com/telephone/LookingGlass">LookingGlass</a></p>
+        <p>Originally from <a href="http://github.com/telephone/LookingGlass">LookingGlass</a> | <a href="https://github.com/jnraptor-builds/LookingGlass">Source</a></p>
       </footer>
 
     </div><!-- /container -->
