@@ -237,12 +237,12 @@ function setup() {
     sleep 1
 
     # Local vars
-    local IP4=${docker_ip4}
-    local IP6=${docker_ip6}
-    local LOC=${docker_loc}
-    local S=${docker_sitename}
-    local T=${docker_testfiles}
-    local U=${docker_siteurl}
+    local IP4=${lg_ip4}
+    local IP6=${lg_ip6}
+    local LOC=${lg_loc}
+    local S=${lg_sitename}
+    local T=${lg_testfiles}
+    local U=${lg_siteurl}
     local RATE=n
 
     # User input
