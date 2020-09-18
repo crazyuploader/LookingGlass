@@ -403,22 +403,14 @@ cat << EOF
 
 EOF
 
-read -e -p "Do you wish to install LookingGlass? (y/n): " ANSWER
-
-if [[ $ANSWER == 'y' ]] || [[ $ANSWER == 'yes' ]]; then
-    cat << EOF
+cat << EOF
 
 ###              ###
 # Starting install #
 ###              ###
 
 EOF
-    sleep 1
-else
-    echo 'Installation stopped :('
-    echo
-    exit
-fi
+sleep 1
 
 # Global vars
 CONFIG='Config.php'
