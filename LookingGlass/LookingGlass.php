@@ -124,7 +124,7 @@ class LookingGlass
     public function traceroute($host, $fail = 2)
     {
         if ($host = $this->validate($host)) {
-            return $this->procExecute('traceroute -4 -f 3 -w2', $host, $fail);
+            return $this->procExecute('traceroute -4 -f 3 -A -n -w2', $host, $fail);
         }
         return false;
     }
@@ -144,7 +144,7 @@ class LookingGlass
     public function traceroute6($host, $fail = 2)
     {
         if ($host = $this->validate($host, 6)) {
-            return $this->procExecute('traceroute -6 -f 3 -w2', $host, $fail);
+            return $this->procExecute('traceroute -6 -f 3 -A -n -w2', $host, $fail);
         }
         return false;
     }
